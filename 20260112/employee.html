@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Employee Registration Form</title>
+  </head>
+  <body style="background-color: blanchedalmond ">
+    <h1>Employee Registration Form</h1>
+
+    <form action="submit_registration" method="post">
+      <!-- Personal Information -->
+      <fieldset style="color: blue;">
+        <legend>Personal Information</legend>
+
+        <label style="color: blue" fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required /><br /><br />
+
+        <label style="color: blue" for="<mname">Middlename:</label>
+        <input type = "text" id ="mname" name = "mname" required /><br /><br />
+
+        <label style="color: blue" for="<lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required /><br /><br />
+
+        <label style="color: blue" for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <label for="gender">Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="Other" />
+        <label for="other">Other</label><br /><br />
+    </fieldset>
+
+    <!-- Contact Information -->
+    <fieldset style="color: red;">
+        <legend>Contact Information</legend>
+
+        <st
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" /><br /><br />
+
+        <label for="address">Address:</label><br />
+        <textarea id="address" name="address" rows="4" cols="40"></textarea
+        ><br /><br />
+    </fieldset>
+
+    <!-- Academic Information -->
+    <fieldset style="color: grey;">
+        <legend>Experience</legend>
+
+        <label for="Company">Company Name:</label>
+        <select id="Company" name="Company">
+          <option value="Google">Google</option>
+          <option value="Cognizant">Cognizant</option>
+          <option value="TCS">TCS</option>
+          <option value="Wipro">Wipro</option></select
+        ><br /><br />
+
+        <label for="year">Years of Experience:</label>
+        <select id="year" name="year">
+          <option value="1">1st Year</option>
+          <option value="2">2nd Year</option>
+          <option value="3">3rd Year</option>
+          <option value="4">4th Year</option></select
+        ><br /><br />
+
+        <label> Skills :</label><br />
+        <input type="checkbox" id="python" name="Skills" value="python" />
+        <label for="python">Python</label><br />
+
+        <input type="checkbox" id="java" name="Skills" value="java" />
+        <label for="java">Java</label><br />
+        <input
+          type="checkbox"
+          id="cs"
+          name="subjects"
+          value="Computer Science"
+        />
+        <label for="cs">SQL</label><br />
+        <input type="checkbox" id="english" name="subjects" value="English" />
+        <label for="english">MangoDB</label><br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend> Upload Resume </legend>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" /><br /><br />
+      </fieldset>
+
+      <fieldset style="color: hotpink;">
+        <legend>Domain in research</legend>
+        <label for="domain">Domain:</label>
+        <select id="domain" name="domain">
+          <option value="AI">AI</option>
+          <option value="ML">ML</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Cyber Security">Cyber Security</option></select>
+        <br /><br />
+
+        <label for="Domain explaination">Domain yOu choose this domain:</label><br />
+        <textarea id="Domain explaination" name="Domain explaination" rows="5" cols="50"></textarea
+        ><br /><br />
+
+
+      </fieldset style="color: red;">
+      <!-- Login Information -->
+      <fieldset>
+        <legend>Login Information</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+      </fieldset>
+
+      <!-- Submit and Reset -->
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
